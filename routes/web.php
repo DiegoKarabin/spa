@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Backend
+Route::resource('lessons', 'Backend/LessonsController');
+
+// SPA
+Route::get('/{any?}', 'PageController@index')->name('home');
