@@ -12,7 +12,7 @@
 */
 
 // Backend
-Route::resource('lessons', 'Backend/LessonsController');
+Route::resource('lessons', 'Backend\LessonController');
 
 // SPA
-Route::get('/{any?}', 'PageController@index')->name('home');
+Route::get('/', 'PageController@index')->name('home');

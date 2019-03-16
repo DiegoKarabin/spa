@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\Http\Requests\LessonStoreRequest;
 use App\Http\Requests\LessonUpdateRequest;
 
+use App\Http\Controllers\Controller;
 use App\Lesson;
 use Illuminate\Http\Request;
 

@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
+import Lesson from './components/Lesson.vue';
+import view404 from './components/404.vue';
+
 Vue.use(Router);
 
 export default new Router({
@@ -8,12 +11,12 @@ export default new Router({
         {
             path: ':slug',
             name: 'lesson',
-            component: require('./views/Lesson'),
+            component: Lesson,
             props: true
         },
         {
             path: '*',
-            component: require('./views/404')
+            component: view404
         }
     ],
     linkExactActiveClass: 'active',
